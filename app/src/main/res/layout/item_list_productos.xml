@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|center_vertical">
+
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="57dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:textAlignment="textStart"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtPrecio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Coca cola" />
+
+    <TextView
+        android:id="@+id/txtPrecio"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtDesc"
+        app:layout_constraintEnd_toStartOf="@+id/btnPlus"
+        app:layout_constraintStart_toEndOf="@+id/txtDesc"
+        tools:text="$150" />
+
+    <Button
+        android:id="@+id/btnPlus"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/plus"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtPrecio"
+        app:layout_constraintEnd_toStartOf="@+id/txtCant"
+        app:layout_constraintStart_toEndOf="@+id/txtPrecio"
+        tools:text="➕️" />
+
+    <TextView
+        android:id="@+id/txtCant"
+        android:layout_width="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnPlus"
+        app:layout_constraintEnd_toStartOf="@+id/btnMin"
+        app:layout_constraintStart_toEndOf="@+id/btnPlus"
+        tools:text="1" />
+
+    <Button
+        android:id="@+id/btnMin"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/min"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtCant"
+        app:layout_constraintEnd_toStartOf="@+id/txtTotal"
+        app:layout_constraintStart_toEndOf="@+id/txtCant"
+        tools:text="➖️" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnMin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMin"
+        tools:text="$1231234" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

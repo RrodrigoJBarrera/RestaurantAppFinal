@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Restaurante</string>
+    <string name="mozo">Mozo</string>
+    <string name="cocina">Cocina</string>
+    <string name="todo">TODO</string>
+    <string name="enviar_pedido">Enviar Pedido</string>
+    <string name="mesa">Mesa</string>
+    <string name="pollos_hnos">Los Pollos Hnos</string>
+    <string name="plus">➕️</string>
+    <string name="min">➖️</string>
+    <string name="total">Total</string>
+    <string name="actualizar_cambios">Actualizar Cambios</string>
+</resources>
